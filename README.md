@@ -1,52 +1,52 @@
+# Automatic Translation of Minecraft Mods to Russian
 
-# Автоматический перевод Minecraft модов на русский язык
+The script operates by scanning the provided directory for en_us.json files within .jar mod files. When found, it reads the English text from the JSON, translates it into Russian using the deep_translator package, and then writes the translated text back into a new ru_ru.json file within the .jar mod file.
 
-Скрипт работает, перебирая предоставленный каталог в поисках файлов en_us.json в файлах модов .jar. Найдя, он считывает английский текст из JSON, переводит его на русский с помощью пакета deep_translator, а затем записывает переведенный текст обратно в новый файл ru_ru.json в файле мода .jar.
+## Usage
 
-## Использование
+To use the script, follow these steps:
 
-Для использования скрипта выполните следующие шаги:
-
-1. Убедитесь, что у вас установлен Python 3.
-2. Установите необходимые зависимости
-3. Запустите скрипт с указанием пути к каталогу с модами для перевода:
+1. Ensure you have Python 3 installed.
+2. Install the required dependencies.
+3. Run the script with the path to the directory containing the mods you want to translate:
 
    ```bash
-   python main.py -i ПУТЬ_К_КАТАЛОГУ_С_МОДАМИ
+   python main.py -i PATH_TO_MODS_DIRECTORY
    ```
 
-4. Скрипт автоматически переведет текст модов и создаст файлы на русском языке.
+4. The script will automatically translate the text in the mods and create files in Russian.
 
-## Особенности
+## Features
 
-- Скрипт робатет на большинства версияx *Minecraft*
-- Скрипт сам определяет есть ли у мода руская локализацыя если да то он пропускает его
-- Если у мода нет  en_us.json он не сможет перевести мод и пропустит его
+- The script works for most versions of Minecraft.
+- It autonomously detects if a mod has Russian localization; if it does, it skips it.
+- If a mod lacks en_us.json, it won't be translated and will be skipped.
 
-## Зависимости
+## Dependencies
 
-Для запуска скрипта вам понадобятся следующие библиотеки:
+To run the script, you'll need the following libraries:
 
 - `deep_translator`
 - `argparse`
 - `zipfile`
 - `json`
 
-## Важно
-- Этот скрипт использует Google Translator, и у него могут быть ограничения или ограничения по скорости перевода. Помните об этих ограничениях при переводе большого количества модов.
+## Important
 
-- Некоторые моды могут не иметь файлов «en_us.json», или перевод может быть несовершенным из-за автоматического перевода.
+- This script utilizes Google Translator, which may have limitations or rate limits. Be mindful of these restrictions when translating a large number of mods.
 
-- Прежде чем запускать этот скрипт, убедитесь, что у вас есть резервные копии ваших модов, поскольку он изменяет моды, добавляя переведенные файлы.
+- Some mods may not have "en_us.json" files, or the translation may be imperfect due to automatic translation.
 
-## Лицензия
+- Before running this script, ensure you have backups of your mods, as it alters mods by adding translated files.
 
-Этот проект распространяется под лицензией MIT. Подробности можно найти в файле [LICENSE](LICENSE).
+## License
 
-## Автор
+This project is distributed under the MIT license. Details can be found in the [LICENSE](LICENSE) file.
 
-Автор: @Iablunoshka
+## Author
 
-## Связь
+Author: @Iablunoshka
 
-Если у вас есть вопросы или предложения, вы можете связаться со мной в Discord: 6masia9
+## Contact
+
+If you have questions or suggestions, feel free to reach out to me on Discord: 6masia9
